@@ -1,0 +1,38 @@
+name: rick_and_morty_app
+description: "Rick and Morty Characters App"
+publish_to: 'none'
+version: 1.0.0+1
+
+environment:
+  sdk: ^3.10.7
+
+dependencies:
+  flutter:
+    sdk: flutter
+  
+  # Работа с сетью - для запросов к API
+  dio: ^5.4.0
+  
+  # Локальная база данных - для избранного и кэширования
+  hive: ^2.2.3
+  hive_flutter: ^1.1.0
+  
+  # Кэширование картинок - чтобы оффлайн работали
+  cached_network_image: ^3.3.1
+  
+  # State management - управление состоянием приложения
+  provider: ^6.1.1
+
+  shimmer: ^3.0.0
+
+dev_dependencies:
+  flutter_test:
+    sdk: flutter
+  flutter_lints: ^5.0.0
+  
+  # Генератор для Hive моделей
+  hive_generator: ^2.0.1
+  build_runner: ^2.4.8
+
+flutter:
+  uses-material-design: true
